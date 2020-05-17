@@ -19,8 +19,23 @@ body {
 }
 
 /* Global CSS */
-.display-none {
-    display: none !important;
+.display-none { display: none !important; }
+.text-center { text-align: center; }
+/* Font weights */
+.font-weight-bold { font-weight: 400; }
+/* Color Text */
+.text-color-primary { color: hsl(233, 25%, 36%); }
+.text-color-secondary { color: #9698a6; }
+/* Button */
+.btn {
+    padding: 1rem 1.75rem;
+    border-radius: 25px;
+    font-weight: bold;
+    color: #FFFFFF;
+    margin: 0 0.5rem;
+}
+.btn-primary {
+    background-image: linear-gradient(to right, var(--lime-green), var(--bright-cyan));
 }
 
 /* Overlay */
@@ -35,6 +50,7 @@ body {
     background-image: linear-gradient(var(--dark-blue), transparent);
     opacity: 0;
     transition: 0.5s ease;
+    z-index: 1;
 }
 
 /* Main Container */
@@ -98,7 +114,8 @@ body {
 .header {
     background-color: var(--very-light-gray);
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    padding-bottom: 5rem;
 }
 .header-side-background {
     position: relative;
@@ -109,5 +126,9 @@ body {
 }
 .header-side-background img {
     width: 100%;
-    margin-top: -160px;
+    margin-top: -5rem;
+    z-index: 1;
+}
+.header-side-content p {
+    margin-bottom: 2.75rem;
 }
