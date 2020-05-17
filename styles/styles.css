@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,531;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,531;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --lime-green: hsl(136, 65%, 51%);
+    --bright-cyan: hsl(192, 70%, 51%);
+    --dark-blue: hsl(233, 26%, 24%);
+
+    --very-ight-gray: hsl(0, 0%, 98%);
+}
+
+* {
+    box-sizing: content-box;
+}
+
+body {
+    font-family: 'Public Sans', sans-serif;
+    position: relative;
+}
+
+/* Overlay */
+.overlay.show {
+    opacity: 1;
+    transition: 0.5s ease;
+}
+.overlay {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(var(--dark-blue), transparent);
+    opacity: 0;
+    transition: 0.5s ease;
+}
+
+/* Global CSS */
+.display-none {
+    display: none !important;
+}
+
+/* Navigation Bar */
+.navbar-container {
+    position: relative;
+    z-index: 2;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #FFFFFF;
+    padding: 1.5rem 1rem;
+}
+.navbar-items {
+    list-style-type: none;
+    padding: 0;
+    display: none;
+}
+.navbar-item {
+    padding: 0.5rem 0;
+    font-size: 18px;
+}
+.navbar-item a,
+.navbar-item-m a {
+    text-decoration: none;
+    color: initial;
+}
+.navbar-container-m {
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+    opacity: 0;
+    transition: 0.5s ease;
+}
+.navbar-container-m.show {
+    opacity: 1;
+    transition: 0.5s ease;
+}
+.navbar-items-m {
+    list-style-type: none;
+    background-color: #FFFFFF;
+    margin: 1.5rem;
+    padding: 1.5rem;
+    border-radius: 3px;
+    border: 1px solid var(--very-ight-gray);
+}
+.navbar-item-m {
+    padding: 0.75rem 0;
+    font-size: 18px;
+    text-align: center;
+}
