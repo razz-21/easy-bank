@@ -17,6 +17,11 @@ body {
     position: relative;
 }
 
+/* Global CSS */
+.display-none {
+    display: none !important;
+}
+
 /* Overlay */
 .overlay.show {
     opacity: 1;
@@ -29,11 +34,6 @@ body {
     background-image: linear-gradient(var(--dark-blue), transparent);
     opacity: 0;
     transition: 0.5s ease;
-}
-
-/* Global CSS */
-.display-none {
-    display: none !important;
 }
 
 /* Navigation Bar */
