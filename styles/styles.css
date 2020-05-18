@@ -132,3 +132,24 @@ body {
 .header-side-content p {
     margin-bottom: 2.75rem;
 }
+
+/* Why Choose Bank Content */
+#why-choose-bank-content {
+    background-color: hsl(0, 5%, 96%);
+    padding: 4rem 1.5rem 2rem;
+}
+#why-choose-bank-content .head-content {
+    margin-bottom: 2.5rem;
+}
+#why-choose-bank-content .feature-grid {
+    display: grid;
+    grid-template-columns: repeat(1fr, 12);
+    column-gap: 1rem;
+}
+#why-choose-bank-content .feature-grid .feature-item {
+    grid-column: span 12;
+    margin: 1.25rem 0;
+}
+#why-choose-bank-content .feature-img {
+    padding: 1rem 0;
+}
