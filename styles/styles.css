@@ -37,6 +37,9 @@ body {
 .btn-primary {
     background-image: linear-gradient(to right, var(--lime-green), var(--bright-cyan));
 }
+.btn-primary:hover {
+    background-image: linear-gradient(to right, hsl(136, 65%, 51%), var(--bright-cyan));
+}
 
 /* Card */
 .card {
@@ -183,6 +186,14 @@ body {
     font-size: 12px;
     margin-bottom: 0.75rem;
 }
+a.article-title {
+    font-size: 1.75rem;
+    text-decoration: none;
+    cursor: pointer;
+}
+a.article-title:hover {
+    color: var(--lime-green);
+}
 
 /* Footer */
 .footer {
@@ -209,8 +220,12 @@ body {
     justify-content: center;
     align-items: center;
 }
-.footer-social-icons img {
+.footer-social-icons svg {
+    cursor: pointer;
     margin: 0 0.5rem;
+}
+.footer-social-icons svg path:hover {
+    fill: var(--lime-green);
 }
 .footer-navigation {
     grid-column: span 12;
